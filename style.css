@@ -91,4 +91,47 @@ body {
   background: linear-gradient(to right, var(--bg-color), rgb(154, 154, 237));
   filter: blur(50px);
   -webkit-filter: blur(50px);
+}
+
+.approvals {
+  width: 100%;
+}
+.approvals .heading {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem auto;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.approvals .logos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 4rem auto;
+}
+.approvals .logos .logos-box {
+  overflow: hidden;
+  transition: all 0.9s ease-in-out;
+}
+.approvals .logos .logos-box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 250px;
+  aspect-ratio: 16/9;
+  padding: auto 5px;
+  transition: all 0.7s ease-in-out;
+}
+.approvals .logos .logos-box img:hover {
+  transform: scale(0.9);
+}
+.approvals .logos .logos-box img:hover {
+  border-inline: 2px solid gray;
+  border-block: 3px solid black;
+  border-radius: 20px;
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */
